@@ -1,0 +1,174 @@
+.image-comparison-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: ew-resize;
+}
+
+.after-image,
+.before-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.after-image img,
+.before-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.before-image {
+  z-index: 2;
+}
+
+.image-label {
+  position: absolute;
+  top: 40px;
+  transform: translateY(-50%);
+  background: var(--primary-color-opacity);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  z-index: 3;
+}
+
+.before-label {
+  left: 15px;
+}
+
+.after-label {
+  right: 30px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  z-index: 4;
+  cursor: ew-resize;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-line {
+  width: 2px;
+  height: 20px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-arrow {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: brightness(0) invert(1);
+}
+
+.slider-arrow-left {
+  left: -8px;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.slider-arrow-right {
+  right: -8px;
+}
+
+/* Overlay с деталями проекта */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.project-details-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 0 2px 0 0;
+  color: #fff;
+}
+
+.project-details-overlay h4 {
+  color: #fb976d;
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 2px solid #fb976d;
+  padding-bottom: 0.5rem;
+}
+
+.project-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-details-list .detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-details-list .detail-label {
+  font-weight: 600;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.project-details-list .detail-value {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .project-details-overlay {
+    max-width: 300px;
+    padding: 1.5rem;
+  }
+
+  .project-details-overlay h4 {
+    font-size: 1.4rem;
+  }
+
+  .project-details-list .detail-value {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,697 @@
+.home {
+  width: 100%;
+  position: relative;
+}
+
+/* Hero блок */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-text {
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Кнопки теперь в компоненте Button */
+
+/* Секции */
+.services-section,
+.before-after-section,
+.reviews-section,
+.how-we-work-section,
+.consultation-section {
+  padding: 5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.services-section {
+  background: radial-gradient(circle at center, #fb976d4a, #1b1b1e);
+}
+
+.services-section .section-title {
+  color: #fff;
+  text-align: left;
+}
+
+.before-after-section .section-title, .reviews-section .section-title  {
+  color: #fff;
+}
+
+.consultation-section {
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.consultation-section .section-title {
+  color: #fff;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+/* Услуги */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.service-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 500px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.service-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 2;
+}
+
+.service-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 3;
+  color: #fff;
+}
+
+.service-content h3 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.service-content p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Галерея до/после */
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 3rem;
+}
+
+.before-after-item {
+  overflow: hidden;
+}
+
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #888;
+  font-size: 0.9rem;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.cta-center {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Отзывы */
+.reviews-section {
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bitteva', serif;
+  font-size: clamp(10rem, 30vw, 24rem);
+  font-weight: bold;
+  color: var(--primary-color);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.8;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.reviews-swiper {
+  padding: 1rem 0;
+}
+
+.review-card {
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: auto;
+  backdrop-filter: blur(10px);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-content {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.review-images {
+  display: flex;
+  gap: 0.1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.review-images::-webkit-scrollbar {
+  display: none;
+}
+
+.review-images img {
+  width: 90px;
+  min-width: 45px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.review-footer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: auto;
+  gap: 0.75rem;
+}
+
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.review-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-user-info {
+  flex: 1;
+}
+
+.review-author {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: #afafaf;
+  margin: 0;
+}
+
+.review-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ffffffe7;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review-text.expanded {
+  display: block;
+  -webkit-line-clamp: none;
+}
+
+.review-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color-active);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+}
+
+.review-toggle-btn:hover {
+  color: var(--primary-color-opacity);
+}
+
+/* Swiper customization */
+.reviews-swiper .swiper-slide {
+  height: auto;
+}
+
+.reviews-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+/* Как мы работаем */
+.how-we-work-section .section-title {
+  color: #fff;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.step-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  color: #ffffffae;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  justify-self: flex-start;
+}
+
+.step-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.step-card p {
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+/* Контактная форма */
+.consultation-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.consultation-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.consultation-info p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.consultation-form {
+  padding: 0 1.5rem;
+}
+
+.consultation-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  transition: border-color 0.3s;
+}
+
+.consultation-form input::placeholder,
+.consultation-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.consultation-form input:focus,
+.consultation-form textarea:focus {
+  outline: none;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.consultation-form textarea {
+  resize: vertical;
+}
+
+.consent-text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: .5rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.consultation-form .btn {
+  width: 100%;
+}
+
+/* Декоративное изображение ручки шкафа */
+.closet-handle-decorative {
+  position: absolute;
+  bottom: 60vh;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.closet-handle-decorative img {
+  object-fit: cover;
+  rotate: y 25deg;
+  max-height: 600px;
+}
+
+/* Декоративное изображение DAS */
+.das-decorative {
+  position: absolute;
+  bottom: 60vh;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.das-decorative img {
+  object-fit: cover;
+  rotate: y -25deg;
+  max-height: 600px;
+}
+
+/* Декоративное изображение внизу страницы */
+.bottom-decorative-image {
+  position: absolute;
+  bottom: -20px;
+  left: 35%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bottom-decorative-image img {
+  object-fit: cover;
+  rotate: y 40deg;
+  max-height: 700px;
+}
+
+
+/* Мобильная адаптация */
+@media (max-width: 968px) {
+  .consultation-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+  }
+
+  .bottom-decorative-image {
+    display: none;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero-buttons .btn {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .services-section,
+  .before-after-section,
+  .reviews-section,
+  .how-we-work-section,
+  .consultation-section {
+    padding: 3rem 0;
+  }
+
+  .services-grid,
+  .reviews-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .before-after-grid {
+    gap: 0;
+  }
+
+  .service-card {
+    height: 400px;
+  }
+
+  .service-content h3 {
+    font-size: 1.5rem;
+  }
+
+
+  .detail-item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .detail-label {
+    min-width: auto;
+    text-align: left;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .consultation-form {
+    padding: 2rem;
+  }
+
+  .consultation-info h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .step-card {
+    padding: 1.5rem;
+  }
+}
