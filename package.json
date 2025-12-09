@@ -13,7 +13,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
-    "swiper": "^12.0.3"
+    "swiper": "^12.0.3",
+    "yet-another-react-lightbox": "^3.26.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

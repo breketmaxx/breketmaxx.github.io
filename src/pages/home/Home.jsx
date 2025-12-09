@@ -14,9 +14,12 @@ import Button from '../../components/Button'
 import ImageComparisonSlider from '../../components/ImageComparisonSlider'
 import reviewsData from '../../data/reviews.json'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
+import { Autoplay, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/autoplay'
+import 'swiper/css/navigation'
+import Lightbox from 'yet-another-react-lightbox'
+import 'yet-another-react-lightbox/styles.css'
 import './Home.css'
 
 function Home() {
@@ -28,6 +31,11 @@ function Home() {
 
   const [expandedReviews, setExpandedReviews] = useState(new Set())
 
+  // Состояние для модального окна изображений
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [lightboxIndex, setLightboxIndex] = useState(0)
+  const [lightboxSlides, setLightboxSlides] = useState([])
+
   const toggleReviewExpansion = (reviewId) => {
     const newExpanded = new Set(expandedReviews)
     if (newExpanded.has(reviewId)) {
@@ -36,6 +44,17 @@ function Home() {
       newExpanded.add(reviewId)
     }
     setExpandedReviews(newExpanded)
+  }
+
+  // Функция для открытия модального окна с изображениями
+  const openLightbox = (reviewImages, startIndex = 0) => {
+    const slides = reviewImages.map(image => ({
+      src: image['1280x960'] || image['640x480'] || image['256x192'],
+      alt: `Работа ${startIndex + 1}`
+    }))
+    setLightboxSlides(slides)
+    setLightboxIndex(startIndex)
+    setLightboxOpen(true)
   }
 
   const renderReview = (review, showFullText = false) => {
@@ -59,14 +78,26 @@ function Home() {
         </div>
 
         {review.images.length > 0 && (
-          <div className="review-images">
-            {review.images.slice(0, 4).map((image, index) => (
-              <img
-                key={index}
-                src={image['180x135'] || image['256x192']}
-                alt={`Работа ${index + 1}`}
-              />
-            ))}
+          <div className="review-images-swiper-container">
+            <Swiper
+              modules={[Navigation]}
+              slidesPerView={'auto'}
+              spaceBetween={4}
+              allowTouchMove={false}
+              navigation={true}
+              className="review-images-swiper"
+            > 
+              {review.images.map((image, index) => (
+                <SwiperSlide key={index} className="review-image-slide">
+                  <img
+                    src={image['180x135'] || image['256x192']}
+                    alt={`Работа ${index + 1}`}
+                    onClick={() => openLightbox(review.images, index)}
+                    style={{ cursor: 'pointer' }}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         )}
 
@@ -413,7 +444,9 @@ function Home() {
               }}
               autoplay={{
                 delay: 3000,
-                disableOnInteraction: false,
+                disableOnInteraction: true,
+                reverseDirection: true,
+                pauseOnMouseEnter: true,
               }}
               loop={true}
               className="reviews-swiper"
@@ -444,8 +477,9 @@ function Home() {
               }}
               autoplay={{
                 delay: 2500,
-                disableOnInteraction: false,
+                disableOnInteraction: true,
                 reverseDirection: true,
+                pauseOnMouseEnter: true,
               }}
               loop={true}
               className="reviews-swiper"
@@ -677,6 +711,15 @@ function Home() {
       >
         <img src={backImg} alt="decorative" />
       </motion.div>
+
+      {/* Модальное окно для просмотра изображений */}
+      <Lightbox
+        open={lightboxOpen}
+        close={() => setLightboxOpen(false)}
+        index={lightboxIndex}
+        slides={lightboxSlides}
+        on={{ view: ({ index }) => setLightboxIndex(index) }}
+      />
     </div>
   )
 }

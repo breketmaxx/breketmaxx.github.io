@@ -319,6 +319,41 @@
   flex-shrink: 0;
 }
 
+/* Swiper контейнер для изображений в отзывах */
+.review-images-swiper-container {
+  position: relative;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.review-images-swiper {
+  overflow: visible;
+}
+
+.review-image-slide {
+  width: auto !important;
+  flex-shrink: 0;
+}
+
+.review-image-slide img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.review-image-slide img:hover {
+  transform: scale(1.05);
+}
+
+/* Кастомизация цветов Swiper */
+.review-images-swiper-container {
+  --swiper-navigation-color:  var(--primary-color);
+  --swiper-navigation-size: 20px;
+}
+
 .review-footer {
   display: flex;
   align-items: flex-start;
