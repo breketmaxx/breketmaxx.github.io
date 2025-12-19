@@ -1,0 +1,215 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Замена столешниц и фасадов в классической кухне",
+      "description": "Полная замена старых фасадов МДФ на современные глянцевые. Установка кварцевой столешницы и фартука из керамической плитки.",
+      "materials": ["Фасады МДФ глянцевые", "Столешница кварцевая", "Фартук керамический"],
+      "price": "145 000 ₽",
+      "duration": "18 дней",
+      "works": [
+        "Демонтаж старых фасадов",
+        "Изготовление новых фасадов",
+        "Установка фасадов",
+        "Монтаж столешницы",
+        "Установка фартука"
+      ],
+      "images": [
+        "https://40.img.avito.st/image/1/1.Pp-rR7a5OCsfZIT0EiJ30pMWknQZ4pL0CWSfdBnylnQ.KZod59neHU3N3DSHgWRTXgJI9_vJRJc3oKba83fsdBQ",
+        "https://40.img.avito.st/image/1/1.Pp-rR7a5OCsfDJL6HyJ30pMWknQZ4pKcH2qSdBnylnQ.i46woNNJy86Q1ryw0sXlhirSaQLF5EiJ2kzajn-aRcU",
+        "https://40.img.avito.st/image/1/1.Pp-rR7a5OCsfZJT0HiJ30pMWknQZ4pL0GWSTdBnylnQ.gFn9r0AqGXR0Z7p_4QjkeQhRx7j0ShW7eufKpvsrHM0"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Кухонный гарнитур с островом",
+      "description": "Изготовление и установка современного кухонного гарнитура с островом. Использованы материалы высокого качества с акцентом на эргономику.",
+      "materials": ["Фасады акриловые", "Столешница гранитная", "Корпус ЛДСП"],
+      "price": "280 000 ₽",
+      "duration": "25 дней",
+      "works": [
+        "Замер и проектирование",
+        "Изготовление корпуса",
+        "Изготовление фасадов",
+        "Сборка и установка",
+        "Подключение техники"
+      ],
+      "images": [
+        "https://30.img.avito.st/image/1/1._9IcS7a5-WaoaEW5pSzxliQaUzmu7lO5vmheOa7-Vzk.yR7Ol5_DmVO_DikP-eeJNbIdoVqCKO4GNDTwX17IDaQ",
+        "https://30.img.avito.st/image/1/1._9IcS7a5-WaoAFO3qCzxliQaUzmu7lPRqGZTOa7-Vzk.LxGva6jKTbI55eK86F1uBybNWbJ9D9I2Ob99YdBsIFY"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Замена столешницы в минималистичной кухне",
+      "description": "Замена старой деревянной столешницы на современную акриловую с интегрированной мойкой. Установка новых цоколей и плинтусов.",
+      "materials": ["Столешница акриловая", "Мойка интегрированная", "Цоколи алюминиевые"],
+      "price": "85 000 ₽",
+      "duration": "12 дней",
+      "works": [
+        "Демонтаж старой столешницы",
+        "Изготовление новой столешницы",
+        "Установка интегрированной мойки",
+        "Монтаж цоколей",
+        "Установка плинтусов"
+      ],
+      "images": [
+        "https://70.img.avito.st/image/1/1.3-jb07a52Vxv8GWDYvSBismacwNpdnODefB-A2lmdwM.0eg3o0EmqAhuQYEmIZ6uwj8lGtQ_5M75yPQ7l7yWnoM",
+        "https://70.img.avito.st/image/1/1.3-jb07a52Vxv8HONb_SBismacwNpdnPrb_5zA2lmdwM.qJOgyPjrnVOOigU5_G0m471_AEXSk04Qu1NWFPwKn6c"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Перепланировка кухни с барной стойкой",
+      "description": "Полная перепланировка кухни с демонтажем стены и установкой барной стойки. Замена всех фасадов и столешниц.",
+      "materials": ["Фасады матовые МДФ", "Столешница искусственный камень", "Барная стойка"],
+      "price": "320 000 ₽",
+      "duration": "30 дней",
+      "works": [
+        "Демонтаж стены",
+        "Проектирование новой планировки",
+        "Изготовление мебели",
+        "Установка барной стойки",
+        "Финишная отделка"
+      ],
+      "images": [
+        "https://50.img.avito.st/image/1/1.O9TF87a2gT27UV0-v88A7x9Qlzd7mJT3clCV.lbEiNTDS5h9mNTj-VDCAl6ge5Oes22okzkFIT2HaXZ0",
+        "https://50.img.avito.st/image/1/1.O9TF87a2gT3zUhU9v88A7x9Qlzd70Je_cVCV.FU2d3t9vzD9iaikbpVivVTTSmPlqccYAkceM7gLaRrU"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Реставрация винтажной кухни",
+      "description": "Восстановление и модернизация винтажной кухни 80-х годов. Замена столешницы и обновление фасадов с сохранением стиля.",
+      "materials": ["Фасады натуральное дерево", "Столешница мраморная", "Фурнитура винтажная"],
+      "price": "165 000 ₽",
+      "duration": "22 дня",
+      "works": [
+        "Реставрация фасадов",
+        "Замена столешницы",
+        "Обновление фурнитуры",
+        "Полировка и тонировка",
+        "Установка новой техники"
+      ],
+      "images": [
+        "https://40.img.avito.st/image/1/1.eVmUWLa5f-0ge8MyLTN9VKkL1bIm_dUyNnvYsibt0bI.MK5cJANs2Rwy7Vp83_8NxJ1mr3-CnQe5DVrQO9uP6xQ",
+        "https://30.img.avito.st/image/1/1.cPrIera5dk58WcqRcQNE9_Up3BF639yRalnREXrP2BE.8I1eJkQjzGv1QA7WcZ5d8xUIIZvIhjnsj5s8SL40Fns"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Замена столешниц и фасадов в классической кухне",
+      "description": "Полная замена старых фасадов МДФ на современные глянцевые. Установка кварцевой столешницы и фартука из керамической плитки.",
+      "materials": ["Фасады МДФ глянцевые", "Столешница кварцевая", "Фартук керамический"],
+      "price": "145 000 ₽",
+      "duration": "18 дней",
+      "works": [
+        "Демонтаж старых фасадов",
+        "Изготовление новых фасадов",
+        "Установка фасадов",
+        "Монтаж столешницы",
+        "Установка фартука"
+      ],
+      "images": [
+        "https://40.img.avito.st/image/1/1.Pp-rR7a5OCsfZIT0EiJ30pMWknQZ4pL0CWSfdBnylnQ.KZod59neHU3N3DSHgWRTXgJI9_vJRJc3oKba83fsdBQ",
+        "https://40.img.avito.st/image/1/1.Pp-rR7a5OCsfDJL6HyJ30pMWknQZ4pKcH2qSdBnylnQ.i46woNNJy86Q1ryw0sXlhirSaQLF5EiJ2kzajn-aRcU",
+        "https://40.img.avito.st/image/1/1.Pp-rR7a5OCsfZJT0HiJ30pMWknQZ4pL0GWSTdBnylnQ.gFn9r0AqGXR0Z7p_4QjkeQhRx7j0ShW7eufKpvsrHM0"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Кухонный гарнитур с островом",
+      "description": "Изготовление и установка современного кухонного гарнитура с островом. Использованы материалы высокого качества с акцентом на эргономику.",
+      "materials": ["Фасады акриловые", "Столешница гранитная", "Корпус ЛДСП"],
+      "price": "280 000 ₽",
+      "duration": "25 дней",
+      "works": [
+        "Замер и проектирование",
+        "Изготовление корпуса",
+        "Изготовление фасадов",
+        "Сборка и установка",
+        "Подключение техники"
+      ],
+      "images": [
+        "https://30.img.avito.st/image/1/1._9IcS7a5-WaoaEW5pSzxliQaUzmu7lO5vmheOa7-Vzk.yR7Ol5_DmVO_DikP-eeJNbIdoVqCKO4GNDTwX17IDaQ",
+        "https://30.img.avito.st/image/1/1._9IcS7a5-WaoAFO3qCzxliQaUzmu7lPRqGZTOa7-Vzk.LxGva6jKTbI55eK86F1uBybNWbJ9D9I2Ob99YdBsIFY"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Замена столешницы в минималистичной кухне",
+      "description": "Замена старой деревянной столешницы на современную акриловую с интегрированной мойкой. Установка новых цоколей и плинтусов.",
+      "materials": ["Столешница акриловая", "Мойка интегрированная", "Цоколи алюминиевые"],
+      "price": "85 000 ₽",
+      "duration": "12 дней",
+      "works": [
+        "Демонтаж старой столешницы",
+        "Изготовление новой столешницы",
+        "Установка интегрированной мойки",
+        "Монтаж цоколей",
+        "Установка плинтусов"
+      ],
+      "images": [
+        "https://70.img.avito.st/image/1/1.3-jb07a52Vxv8GWDYvSBismacwNpdnODefB-A2lmdwM.0eg3o0EmqAhuQYEmIZ6uwj8lGtQ_5M75yPQ7l7yWnoM",
+        "https://70.img.avito.st/image/1/1.3-jb07a52Vxv8HONb_SBismacwNpdnPrb_5zA2lmdwM.qJOgyPjrnVOOigU5_G0m471_AEXSk04Qu1NWFPwKn6c"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Перепланировка кухни с барной стойкой",
+      "description": "Полная перепланировка кухни с демонтажем стены и установкой барной стойки. Замена всех фасадов и столешниц.",
+      "materials": ["Фасады матовые МДФ", "Столешница искусственный камень", "Барная стойка"],
+      "price": "320 000 ₽",
+      "duration": "30 дней",
+      "works": [
+        "Демонтаж стены",
+        "Проектирование новой планировки",
+        "Изготовление мебели",
+        "Установка барной стойки",
+        "Финишная отделка"
+      ],
+      "images": [
+        "https://50.img.avito.st/image/1/1.O9TF87a2gT27UV0-v88A7x9Qlzd7mJT3clCV.lbEiNTDS5h9mNTj-VDCAl6ge5Oes22okzkFIT2HaXZ0",
+        "https://50.img.avito.st/image/1/1.O9TF87a2gT3zUhU9v88A7x9Qlzd70Je_cVCV.FU2d3t9vzD9iaikbpVivVTTSmPlqccYAkceM7gLaRrU"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Реставрация винтажной кухни",
+      "description": "Восстановление и модернизация винтажной кухни 80-х годов. Замена столешницы и обновление фасадов с сохранением стиля.",
+      "materials": ["Фасады натуральное дерево", "Столешница мраморная", "Фурнитура винтажная"],
+      "price": "165 000 ₽",
+      "duration": "22 дня",
+      "works": [
+        "Реставрация фасадов",
+        "Замена столешницы",
+        "Обновление фурнитуры",
+        "Полировка и тонировка",
+        "Установка новой техники"
+      ],
+      "images": [
+        "https://40.img.avito.st/image/1/1.eVmUWLa5f-0ge8MyLTN9VKkL1bIm_dUyNnvYsibt0bI.MK5cJANs2Rwy7Vp83_8NxJ1mr3-CnQe5DVrQO9uP6xQ",
+        "https://30.img.avito.st/image/1/1.cPrIera5dk58WcqRcQNE9_Up3BF639yRalnREXrP2BE.8I1eJkQjzGv1QA7WcZ5d8xUIIZvIhjnsj5s8SL40Fns"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Компактная кухня для студии",
+      "description": "Изготовление компактной кухни для небольшой студии с максимальным использованием пространства и встроенной техникой.",
+      "materials": ["Фасады глянцевые", "Столешница компактная", "Встроенная техника"],
+      "price": "195 000 ₽",
+      "duration": "20 дней",
+      "works": [
+        "Оптимизация пространства",
+        "Изготовление компактной мебели",
+        "Интеграция бытовой техники",
+        "Установка систем хранения",
+        "Подключение коммуникаций"
+      ],
+      "images": [
+        "https://70.img.avito.st/image/1/1.P1y7Wra5OegPeYU3Aj0WSfoek7cJ_5M3GXmetwnvl7c.V6Hry_MtnFXOXu74SoALdlpr0bRAklPwl-bWiBGvMo4",
+        "https://40.img.avito.st/image/1/1.QlYDG7a5ROK3OPg9ugY2KE9f7r2xvu49oTjjvbGu6r0.1YwFN2RLKhUjZxHoap-25v8MPloivI0qWYnMG2WVYS4"
+      ]
+    }
+  ]
+}

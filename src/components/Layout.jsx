@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
+import ScrollToTop from './ScrollToTop'
 import './Layout.css'
 
 function Layout({ children }) {
@@ -18,6 +19,7 @@ function Layout({ children }) {
 
   return (
     <div className="layout">
+      <ScrollToTop />
       <header className="header">
         <div className="container">
           <div className="header-content">
@@ -34,20 +36,20 @@ function Layout({ children }) {
               <span></span>
             </button>
             <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-              <Link 
+              {/* <Link 
                 to="/services" 
                 className={isActive('/services') ? 'active' : ''}
                 onClick={closeMenu}
               >
                 Услуги
-              </Link>
-              <Link 
+              </Link> */}
+              {/* <Link 
                 to="/calculator" 
                 className={isActive('/calculator') ? 'active' : ''}
                 onClick={closeMenu}
               >
                 Калькулятор
-              </Link>
+              </Link> */}
               <Link 
                 to="/portfolio" 
                 className={isActive('/portfolio') ? 'active' : ''}
@@ -80,8 +82,8 @@ function Layout({ children }) {
         <div className="container">
           <div className="footer-content">
             <div className="footer-links">
-              <Link to="/services" onClick={closeMenu}>Услуги</Link>
-              <Link to="/calculator" onClick={closeMenu}>Калькулятор</Link>
+              {/* <Link to="/services" onClick={closeMenu}>Услуги</Link>
+              <Link to="/calculator" onClick={closeMenu}>Калькулятор</Link> */}
               <Link to="/portfolio" onClick={closeMenu}>Портфолио</Link>
               <Link to="/about" onClick={closeMenu}>О компании</Link>
               <Link to="/contacts" onClick={closeMenu}>Контакты</Link>

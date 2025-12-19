@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'motion/react'
 import './Contacts.css'
 
 function Contacts() {
@@ -30,11 +31,29 @@ function Contacts() {
 
   return (
     <div className="contacts">
+      {/* Hero секция */}
+      <section className="contacts-hero">
+        <div className="container">
+          <motion.h1
+            className="contacts-title"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Контакты
+          </motion.h1>
+          <motion.p
+            className="contacts-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Свяжитесь с нами любым удобным способом
+          </motion.p>
+        </div>
+      </section>
+
       <div className="container">
-        <h1 className="page-title">Контакты</h1>
-        <p className="page-subtitle">
-          Свяжитесь с нами любым удобным способом
-        </p>
 
         <div className="contacts-content">
           <div className="contacts-info">
